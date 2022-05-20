@@ -4,7 +4,7 @@
 보조목적: 주식 정보 파악
 --
 
-<반영해야 할 사항>
+<고려사항>
 
 - Vanilla JS로 작성
 - 컴포넌트 간 의존성을 느슨하게
@@ -24,11 +24,11 @@
 - HTTP Status code 적용
 - SPA 구현
 
-<Vanilla JS 예외 (학습 scope가 아님)>
+* Vanilla JS 예외 (학습 scope가 아님)
 - 차트 그리기 기능
 - http-server 모듈
 
-<반영할 기능>
+<기능>
 
 - 검색 기능
 - 관련 검색어 리스트
