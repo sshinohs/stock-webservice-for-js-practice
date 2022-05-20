@@ -45,6 +45,7 @@
 - 주식 종목 즐겨찾기 기능 구현
 - 즐겨찾기의 폴더 CRUD, 종목 CRUD 구현
 - 즐겨찾기 탐색 시, Breadcrumb 생성
+- 즐겨찾기 테이블 정렬 기능
 - Breadcrumb 클릭 구현
 - Loading 화면 구현
 - 차트 옵션 구현: x-tick(주, 월, 년)
