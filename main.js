@@ -10,7 +10,6 @@ const app = http.createServer(function(request, response) {
         return response.writeHead(404);
     }
     response.writeHead(200);
-    console.log('hing');
     response.end(fs.readFileSync(__dirname + url));
 });
 app.listen(3000);

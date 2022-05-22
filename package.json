@@ -1,0 +1,23 @@
+{
+  "name": "stock-webservice-for-js-practice",
+  "version": "1.0.0",
+  "description": "주식 정보 검색 웹서비스\r ==\r 주목적: Vanilla JS를 이용한 웹개발 연습\r 보조목적: 주식 정보 파악\r --",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshinohs/stock-webservice-for-js-practice.git"
+  },
+  "author": "sshinohs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshinohs/stock-webservice-for-js-practice/issues"
+  },
+  "homepage": "https://github.com/sshinohs/stock-webservice-for-js-practice#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
