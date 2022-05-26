@@ -1,11 +1,45 @@
-import { request } from './api.js';
+import SearchInput from './SearchInput.js';
+import Suggestion from './Suggestion.js';
+import { fetchItems } from './api.js';
+
 
 export default function App({$app}) {
-    
-    function ham() {
-        const king = request('hamzzang');
-        console.log(king);
+    this.state = {
+        fetchedLanguages: []
     }
-    console.log('hing');
-    ham();
+
+    this.setState = (nextState) => {
+        this.state = {
+            ...this.state,
+            ...nextState
+        }
+        suggestion.setState({
+            items: this.state.fetchedItems
+        })
+    }
+
+    const searchInput = new SearchInput({
+        $app,
+        initialState: '',
+        onChange: async (keyword) => {
+            if (keyword.length === 0) {
+                this.setState({
+                    fetchedLanguages: []
+                });
+            } else {
+                const items = await fetchItems(keyword);
+                this.setState({
+                    fetchedItems: items
+                });
+            }
+        }
+    });
+
+    const suggestion = new Suggestion({
+        $app,
+        initialState: {
+            selectedIndex: 0,
+            items: []
+        }
+    })
 }

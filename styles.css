@@ -1,6 +1,16 @@
+ul {
+    padding: 0;
+    margin: 0;
+  }
+
+li {
+    list-style: none;
+  }
+
 .SearchInput {
     position: relative;
     width: 300px;
+    margin-bottom: 10px;
 }
 
 input {
@@ -17,4 +27,15 @@ img {
     top: 10px;
     right: 0px;
     margin: 0;
+}
+
+.Suggestion {
+    /* position: absolute; */
+    font-size: 14px;
+    width: 300px;
+    top: 70%;
+    z-index: 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
 }

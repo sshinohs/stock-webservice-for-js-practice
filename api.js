@@ -1,15 +1,15 @@
-const API_END_POINT = 'http://localhost:5000/echo_call';
+const API_END_POINT = 'http://localhost:5000';
 
-export const request = async (message) => {
-    try {
-        const res = await fetch(`${API_END_POINT}/${message}`);
+export const request = async (url) => {
+    
+        const res = await fetch(url);
 
-        if (!res.ok) {
-            throw new Error('서버의 상태가 이상하다구!');
+        if (res.ok) {
+            const json = await res.json();
+            return json;
         }
 
-        return await res.json();
-    } catch (e) {
-        throw new Error(`무언가 잘못 되었다구! ${e.message}`);
-    }
+        throw new Error('요청에 실패했다구!');
 }
+
+export const fetchItems = async (keyword) => request(`${API_END_POINT}/items/search?keyword=${keyword}`);
