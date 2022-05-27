@@ -40,6 +40,9 @@ export default function App({$app}) {
         initialState: {
             selectedIndex: 0,
             items: []
+        },
+        onSelect: (item) => {
+            alert(item.name);
         }
     })
 }

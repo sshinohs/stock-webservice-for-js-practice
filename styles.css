@@ -39,3 +39,11 @@ img {
     border-radius: 8px;
     border: 1px solid #bbb;
 }
+
+.Suggestion li:hover {
+    background-color: #90CDF4;
+}
+
+.Suggestion__item--selected {
+    background-color: #BEE3F8;
+}
