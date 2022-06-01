@@ -1,6 +1,8 @@
 import SearchInput from './SearchInput.js';
 import Suggestion from './Suggestion.js';
+import StockHistory from './StockHistory.js';
 import { fetchItems } from './api.js';
+
 
 
 export default function App({$app}) {
@@ -43,6 +45,13 @@ export default function App({$app}) {
         },
         onSelect: (item) => {
             alert(item.name);
+        }
+    })
+
+    const stockHistory = new StockHistory({
+        $app,
+        initialState: {
+
         }
     })
 }
