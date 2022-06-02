@@ -26,7 +26,7 @@ export default function App({$app}) {
         onChange: async (keyword) => {
             if (keyword.length === 0) {
                 this.setState({
-                    fetchedLanguages: []
+                    fetchedItems: []
                 });
             } else {
                 const items = await fetchItems(keyword);
